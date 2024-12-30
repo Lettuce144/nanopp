@@ -1,0 +1,51 @@
+# Add configuration for installing syntax highlighting files
+install(DIRECTORY ${CMAKE_SOURCE_DIR}/syntax/ DESTINATION ${CMAKE_INSTALL_DATADIR}/nano FILES_MATCHING PATTERN "*.nanorc")
+
+# Add source files for the syntax highlighting files
+set(SYNTAX_FILES
+    asm.nanorc
+    autoconf.nanorc
+    awk.nanorc
+    changelog.nanorc
+    cmake.nanorc
+    c.nanorc
+    css.nanorc
+    default.nanorc
+    elisp.nanorc
+    email.nanorc
+    go.nanorc
+    groff.nanorc
+    guile.nanorc
+    html.nanorc
+    java.nanorc
+    javascript.nanorc
+    json.nanorc
+    lua.nanorc
+    makefile.nanorc
+    man.nanorc
+    markdown.nanorc
+    nanohelp.nanorc
+    nanorc.nanorc
+    nftables.nanorc
+    objc.nanorc
+    ocaml.nanorc
+    patch.nanorc
+    perl.nanorc
+    php.nanorc
+    po.nanorc
+    python.nanorc
+    ruby.nanorc
+    rust.nanorc
+    sh.nanorc
+    sql.nanorc
+    tcl.nanorc
+    tex.nanorc
+    texinfo.nanorc
+    xml.nanorc
+    yaml.nanorc
+    extra/ada.nanorc
+    extra/fortran.nanorc
+    extra/haskell.nanorc
+    extra/povray.nanorc
+    extra/spec.nanorc
+)
